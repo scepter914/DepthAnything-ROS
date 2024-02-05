@@ -2,6 +2,8 @@
 
 `DepthAnything-ROS` is ROS2 wrapper for [Depth-Anything](https://github.com/LiheYoung/Depth-Anything).
 
+https://github.com/scepter914/DepthAnything-ROS/assets/16330533/9fb5edd2-21b0-4441-a7c1-b304246e49b5
+
 - Environment
   - Ubuntu 22.04.01, ROS2 Humble
   - CUDA 12.3, cuDNN 8.9.5.29-1+cuda12.2, TensorRT 8.6.1.6-1+cuda12.0
