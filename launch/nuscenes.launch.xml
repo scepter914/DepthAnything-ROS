@@ -1,0 +1,10 @@
+<launch>
+  <node pkg="image_transport" exec="republish" args="compressed" name="image_republisher_0" output="screen">
+    <remap from="/in/compressed" to="/CAM_FRONT/image_rect_compressed" />
+    <remap from="/out" to="/CAM_FRONT/image_raw" />
+  </node>
+
+  <include file="$(find-pkg-share depth_anything)/launch/depth_anything.launch.xml">
+    <arg name="input/image" value="/CAM_FRONT/image_raw" />
+  </include>
+</launch>

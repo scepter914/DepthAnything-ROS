@@ -1,0 +1,13 @@
+<launch>
+  <arg name="input/image" default="~/image_raw" />
+  <arg name="output/depth_image" default="~/depth_image" />
+  <arg name="param_path" default="$(find-pkg-share depth_anything)/config/depth_anything.param.yaml" />
+  <arg name="onnx_path" default="$(find-pkg-share depth_anything)/data/depth_anything_vitb14.onnx" />
+
+  <node pkg="depth_anything" exec="depth_anything_node" name="depth_anything" output="screen">
+    <remap from="~/input/image" to="$(var input/image)"/>
+    <remap from="~/output/depth_image" to="$(var output/depth_image)"/>
+    <param from="$(var param_path)" />
+    <param name="onnx_path" value="$(var onnx_path)"/>
+  </node>
+</launch>
