@@ -7,17 +7,20 @@
   - CUDA 12.3, cuDNN 8.9.5.29-1+cuda12.2, TensorRT 8.6.1.6-1+cuda12.0
 
 ## Get started
-### Install dependency
+### Set environment
+
+- Install ROS2
+
+See [ROS2 document](https://docs.ros.org/en/humble/Installation.html).
+
+To install ROS2 easily, I recommend to use ansible script of [Autoware](https://github.com/autowarefoundation/autoware).
+In detail, please see [the installation page](https://autowarefoundation.github.io/autoware-documentation/main/installation/autoware/source-installation/).
+
+- Install dependency
 
 ```
 sudo apt install libgflags-dev libboost-all-dev
 ```
-
-### Install ROS2
-
-See [ROS2 document](https://docs.ros.org/en/humble/Installation.html).
-To install ROS2 easily, I recommend to use ansible script of [Autoware](https://github.com/autowarefoundation/autoware).
-In detail, please see [the installation page](https://autowarefoundation.github.io/autoware-documentation/main/installation/autoware/source-installation/).
 
 ### Set onnx files
 
