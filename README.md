@@ -76,7 +76,19 @@ The path to onnx file.
 The precision mode to use quantization.
 DepthAnything-ROS supports in "fp32" for now.
 
-## Reference
+## Note
+### Performance
+
+- Performance
+  - RTX4090 results is written in official code
+
+| Model                | Params | RTX4090 TensorRT |  RTX2070 TensorRT   |
+| :------------------- | -----: | :--------------: | :-----------------: |
+| Depth-Anything-Small |  24.8M |       3 ms       |  27 ms, VRAM 300MB  |
+| Depth-Anything-Base  |  97.5M |       6 ms       |  65 ms, VRAM 700MB  |
+| Depth-Anything-Large | 335.3M |      12 ms       | 200 ms, VRAM 1750MB |
+
+### Reference
 
 - [Depth-Anything](https://github.com/LiheYoung/Depth-Anything)
 - [trt-depth-anything](https://github.com/daniel89710/trt-depth-anything) Use for TensorRT inference
