@@ -28,10 +28,13 @@ sudo apt install libgflags-dev libboost-all-dev
 
 If you don't have any rosbag, I recommend [rosbag for Nuscenes dataset](https://github.com/scepter914/ros-useful-tools/tree/main/nuscenes_rosbag).
 
-
 ### Set onnx files
 
 Set onnx files for `DepthAnything-ROS/data` or set `onnx_path` parameter.
+
+```
+  <arg name="onnx_path" default="$(find-pkg-share depth_anything)/data/depth_anything_vitb14.onnx" />
+```
 
 Run below command to get the onnx files of pre-train model.
 
@@ -42,6 +45,7 @@ pip install gdown
 mkdir data && cd data
 gdown 1jFTCJv0uJovPAww9PHCYAoek-KfeajK_
 ```
+
 If you want to make onnx files at yourself, please use [depth-anything-tensorrt](https://github.com/spacewalk01/depth-anything-tensorrt/issues/10).
 
 ### Launch
@@ -74,9 +78,13 @@ The path to onnx file.
   - Default parameter: "fp32"
 
 The precision mode to use quantization.
-DepthAnything-ROS supports in "fp32" for now.
+DepthAnything-ROS supports in "fp32" or "fp16" ([#2](https://github.com/scepter914/DepthAnything-ROS/issues/2)) for now.
 
 ## Note
+### Build for TensorRT engine
+
+When you run on the first start up, you need to wait about 5 minutes for build step.
+
 ### Performance
 
 - Performance
