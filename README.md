@@ -46,7 +46,7 @@ mkdir data && cd data
 gdown 1jFTCJv0uJovPAww9PHCYAoek-KfeajK_
 ```
 
-If you want to make onnx files at yourself, please use [depth-anything-tensorrt](https://github.com/spacewalk01/depth-anything-tensorrt/issues/10).
+If you want to make onnx files at yourself, please use [depth-anything-tensorrt](https://github.com/spacewalk01/depth-anything-tensorrt).
 
 ### Launch
 
