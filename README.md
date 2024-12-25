@@ -26,7 +26,7 @@ sudo apt install libgflags-dev libboost-all-dev
 
 - Prepare your rosbag
 
-If you don't have any rosbag, I recommend [rosbag for Nuscenes dataset](https://github.com/scepter914/ros-useful-tools/tree/main/nuscenes_rosbag).
+If you don't have any rosbag, I recommend [rosbag for Nuscenes dataset](https://github.com/scepter914/nuscenes_rosbag).
 
 ### Set onnx files
 
