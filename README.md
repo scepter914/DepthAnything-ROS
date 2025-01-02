@@ -2,7 +2,7 @@
 
 `DepthAnything-ROS` is a ROS2 wrapper for [Depth-Anything](https://github.com/LiheYoung/Depth-Anything).
 
-![DepthAnything Example](https://github.com/scepter914/DepthAnything-ROS/assets/16330533/9fb5edd2-21b0-4441-a7c1-b304246e49b5)
+https://github.com/scepter914/DepthAnything-ROS/assets/16330533/9fb5edd2-21b0-4441-a7c1-b304246e49b5
 
 ## Environment
 
